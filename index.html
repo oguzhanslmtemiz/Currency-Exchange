@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #343435;">
+    <div class="container d-flex flex-column min-vh-100" style="max-width: 40rem;">
+        <main class="mt-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-header">Exchange API - Currency App</div>
+                <div class="card-body">
+                    <input id="amount" class="form-control" type="number" name="amount" placeholder="Amount">
+                    <div class="form-group mt-5 mb-2">
+                        <select id="firstCurrency" class="form-control" name="firstCurrency">
+                        </select>
+                    </div>
+                    <span class="ps-3">to</span>
+                    <div class="form-group mt-2">
+                        <select id="secondCurrency" class="form-control" name="secondCurrency">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="card text-dark bg-info">
+                <div class="card-header d-flex">
+                    <span id="firstOutput"></span>
+                    <span class="mx-1">-</span>
+                    <span id="secondOutput"></span>
+                    <span id="rate" class="mx-auto"></span>
+                    <span id="date"></span>
+                </div>
+                <div class="card-body">
+                    <input id="result" class="form-control" type="number" name="result" placeholder="Result" readonly>
+                </div>
+            </div>
+        </main>
+
+        <footer class="mt-auto text-center">
+            <a class="link-secondary nav-link" href="https://exchangeratesapi.io/"
+                target="_blank">//exchangeratesapi.io</a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+
+    <script src="currency.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
